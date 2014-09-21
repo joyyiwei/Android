@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.socialcard.activity">
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-sdk
+            android:minSdkVersion="8"
+            android:targetSdkVersion="18" />
+
+    <application
+            android:icon="@drawable/icon"
+            android:label="@string/app_name">
+        <activity
+                android:name=".MainActivity"
+                android:label="MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".PrimaryActivity"
+                android:label="primary"/>
+
+        <activity
+                android:name=".ButtonActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+                android:label="button"/>
+        <activity android:name=".ExportActivity"
+                  android:label="ExportActivity"
+                ></activity>
+        <activity android:name=".ContactsActivity"
+                  android:label="ContactsActivity"
+                  ></activity>
+        <activity
+                android:name=".InputActivity"
+                android:label="input"/>
+        <activity
+                android:name=".SetActivity"
+                android:label="set"/>
+        <activity
+                android:name=".HelperActivity"
+                android:label="help"/>
+        <activity
+                android:name=".LoginActivity"
+                android:label="login"/>
+        <activity
+                android:name=".ModifyActivity"
+                android:label="modify"/>
+        <activity
+                android:name=".RegistActivity"
+                android:label="regist"/>
+        <activity
+                android:name=".PassProActivity"
+                android:label="passpro"/>
+    </application>
+</manifest>

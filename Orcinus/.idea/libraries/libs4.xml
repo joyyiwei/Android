@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jai_imageio-1.1-alpha.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/tess-two.tesseract3.01-leptonica1.68-LibJPEG6b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/bg_simple"
+        >
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle_shape"
+            android:id="@+id/useredit"
+            android:hint="请输入用户名"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="52dp"/>
+</LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:id="@+id/passwdedit"
+                android:hint="请输入密码"
+                android:textColor="@color/black"
+                android:background="@drawable/rectangle_shape"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="52dp"
+                ></EditText>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/rectangle_shape"
+            android:text="登录"
+            android:textColor="@color/black" 
+            />
+
+        <Button
+            android:id="@+id/bt_login_regist"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/bt_login"
+            android:layout_alignBottom="@+id/bt_login"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/rectangle_shape"
+            android:text="注册"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

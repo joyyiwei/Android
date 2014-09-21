@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".FourActivity" >
+
+    <Button
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:alpha="0"
+            android:background="@drawable/set_up" />
+
+    <Button
+            android:id="@+id/bgbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/set"
+            android:layout_alignBottom="@+id/set"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bgaddbutton" />
+
+    <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contect"
+            android:layout_alignParentRight="true"
+            android:alpha="0"
+            android:background="@drawable/helper_up" />
+
+    <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bgbt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:alpha="0"
+            android:background="@drawable/scan_up" />
+
+    <Button
+            android:id="@+id/design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bgbt"
+            android:layout_toLeftOf="@+id/bgbt"
+            android:alpha="0"
+            android:background="@drawable/design_up" />
+
+    <Button
+            android:id="@+id/qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/design"
+            android:layout_alignBottom="@+id/design"
+            android:layout_toRightOf="@+id/bgbt"
+            android:alpha="0"
+            android:background="@drawable/qrcode" />
+
+    <Button
+            android:id="@+id/contect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/qrcode"
+            android:layout_below="@+id/bgbt"
+            android:layout_marginTop="20dp"
+            android:alpha="0"
+            android:background="@drawable/contects_up" />
+
+    <Button
+            android:id="@+id/importbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/scan"
+            android:layout_alignTop="@+id/input"
+            android:layout_marginTop="37dp"
+            android:alpha="0"
+            android:background="@drawable/imports_up" />
+
+    <Button
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/contect"
+            android:layout_alignBottom="@+id/contect"
+            android:layout_alignLeft="@+id/design"
+            android:alpha="0"
+            android:background="@drawable/input_up" />
+
+</RelativeLayout>
+

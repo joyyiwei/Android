@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical" >
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF424242" >
+
+                <ImageButton
+                        android:id="@+id/imageBtn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF45E5E"
+                        android:src="@drawable/go_back" />
+
+                <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="创建名片"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <ImageButton
+                        android:id="@+id/imageBtn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFF45E5E"
+                        android:src="@drawable/save" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/head_bg_2" >
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/half_transparent_bg" >
+
+                    <ImageView
+                            android:id="@+id/imageView_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/photo"
+                            android:layout_centerVertical="true" android:layout_alignParentStart="true"
+                            android:layout_marginLeft="33dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp" >
+
+                <LinearLayout
+                        android:id="@+id/ll_card_detail_mobilehone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/item_bg"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="姓名"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+
+                    <EditText
+                            android:id="@+id/edit_userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:textColor="@color/black"
+                            android:ems="10"
+                            android:hint="点击编辑姓名"
+                            android:inputType="textPersonName"
+                            android:textSize="16sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_card_detail_telhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/item_bg"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="手机号码"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+
+                    <EditText
+                            android:id="@+id/edit_userPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:textColor="@color/black"
+                            android:ems="10"
+                            android:hint="点击编辑手机号码"
+                            android:inputType="phone"
+                            android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/ll_card_detail_professional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/item_bg"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="公司"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+
+                    <EditText
+                            android:id="@+id/edit_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:textColor="@color/black"
+                            android:ems="10"
+                            android:hint="公司"
+                            android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/ll_card_detail_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/item_bg"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="邮箱"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+
+                    <EditText
+                            android:id="@+id/edit_userEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="点击编辑邮箱"
+                            android:textColor="@color/black"
+                            android:inputType="textEmailAddress"
+                            android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_card_detail_professional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/item_bg"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="职业"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+
+                    <EditText
+                            android:id="@+id/edit_userProfessional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="点击编辑职业"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

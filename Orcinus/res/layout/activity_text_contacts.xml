@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+            >
+
+        <LinearLayout android:id="@+id/linerlayout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="3dip"
+                      android:layout_alignParentLeft="true"
+                      android:background="@drawable/image_bg"
+                      android:layout_marginRight="5dip">
+
+            <ImageView
+                    android:id="@+id/text_contacts_image"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/rihanna"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/text_contacts_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_alignTop="@+id/linerlayout"
+                android:layout_toRightOf="@+id/linerlayout"
+                android:gravity="center_vertical"
+                android:layout_margin="3dip"
+                android:text="周艺伟"
+                android:textColor="#040405"
+                android:typeface="sans"
+                android:textSize="40dip"
+                android:textStyle="bold"/>
+            </LinearLayout>
+
+    <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+            >
+
+
+        <!-- 住宅电话-->
+        <TextView
+                android:id="@+id/text_contacts_addresstel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:paddingLeft="5dp"
+                android:text="呼叫住宅电话"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:textStyle="bold"/>
+
+        <!-- 电话号码 -->
+        <TextView
+                android:id="@+id/text_contacts_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_contacts_addresstel"
+                android:textColor="#343434"
+                android:paddingLeft="5dp"
+                android:textSize="10dip"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="18650333439" />
+
+        <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/text_contacts_phone"
+                android:src="@drawable/tel_up"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="19dp" android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/text_contacts_message"/>
+        <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/text_contacts_message"
+                android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_marginRight="16dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

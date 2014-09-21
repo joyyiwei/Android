@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="@drawable/bg_simple">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+             >
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="用户名："
+                    android:textSize="20dp"/>
+
+            <EditText
+                    android:id="@+id/usernameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:hint="请输入用户名"
+                    android:textColor="@color/black"/>
+   </LinearLayout>
+
+   <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="30dp"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="密码：    "
+                    android:textSize="20dp"/>
+
+            <EditText
+                    android:id="@+id/passwordRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="性别：    "
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            <RadioGroup
+                    android:id="@+id/sexRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:checkedButton="@+id/woman"
+                   	android:background="@drawable/rectangle_shape"
+                    android:orientation="horizontal" >
+
+                <RadioButton
+                        android:id="@+id/nan"
+                        android:text="男"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"/>
+
+                <RadioButton
+                        android:id="@id/woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="女"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+            </RadioGroup>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/rectangle_shape"
+            android:text="注册"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_setProtect"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/rectangle_shape"
+            android:text="设置密保"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

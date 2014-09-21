@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ItemArray">
+        <item>打电话</item>
+        <item>发信息</item>
+
+    </array>
+    <array name="Array">
+        <item>添加联系人</item>
+        <item>导入系统联系人</item>
+
+    </array>
+</resources>
